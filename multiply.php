@@ -13,6 +13,7 @@ include "view-header.php";
           <span> * </span>
           <input type="number" id="num2" placeholder="Enter second number">
           <button onclick="getMultiply()">Calculate</button>
+            <button onclick="clearEntries()">Clear</button>
           <p>Result: <span id="result"></span></p>
           <script src="script.js"></script>
       </body>
