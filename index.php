@@ -44,7 +44,7 @@ include "view-header.php";
         button {
             background-color: #007bff;
             color: #fff;
-            border: 1px solid #blue;
+            border: 1px solid #black;
             padding: 10px 20px;
             cursor: pointer;
             width: 100%;
