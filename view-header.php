@@ -25,6 +25,9 @@
         <li class="nav-item">
           <a class="nav-link" href="multiply.php">Multiply</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="divide.php">Division</a>
+        </li>
       </ul>
     </div>
   </div>
