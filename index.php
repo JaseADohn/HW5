@@ -9,8 +9,9 @@ include "view-header.php";
       </head>
       <body>
           <h1>Addition Calculator</h1>
-          <input type="number" id="num1" placeholder="Enter a number">
-          <input type="number" id="num2" placeholder="Enter another number">
+          <input type="number" id="num1" placeholder="Enter first number">
+          
+          <input type="number" id="num2" placeholder="Enter second number">
           <button onclick="getSum()">Calculate</button>
           <p>Result: <span id="result"></span></p>
           <script src="script.js"></script>
