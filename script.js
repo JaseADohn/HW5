@@ -11,18 +11,6 @@ function getSum() {
     }
 }
 
-function generateRandomNumber() {
-    const min = parseInt(prompt('Enter the minimum value:'));
-    const max = parseInt(prompt('Enter the maximum value:'));
-
-    if (!isNaN(min) && !isNaN(max)) {
-        const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
-        document.getElementById('randomResult').textContent = `Random Number: ${randomNum}`;
-    } else {
-        document.getElementById('randomResult').textContent = 'Please enter valid minimum and maximum values.';
-    }
-}
-
 function getSubtract() {
     const num1 = parseFloat(document.getElementById('num1').value);
     const num2 = parseFloat(document.getElementById('num2').value);
