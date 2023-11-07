@@ -2,7 +2,22 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-      <h1>Homework 5</h1>
+
+<html>
+      <head>
+          <title>Addition Calculator</title>
+      </head>
+      <body>
+          <h1>Addition Calculator</h1>
+          <input type="number" id="num1" placeholder="Enter a number">
+          <input type="number" id="num2" placeholder="Enter another number">
+          <button onclick="calculateSum()">Calculate</button>
+          <p>Result: <span id="result"></span></p>
+          <script src="script.js"></script>
+      </body>
+</html>
+
 <?php
 include "view-footer.php";
 ?>
+
