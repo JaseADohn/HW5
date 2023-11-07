@@ -8,7 +8,7 @@ include "view-header.php";
           <title>Multiplication Calculator</title>
       </head>
       <body>
-          <h1>Addition Calculator</h1>
+          <h1>Multiplication Calculator</h1>
           <input type="number" id="num1" placeholder="Enter first number">
           
           <input type="number" id="num2" placeholder="Enter second number">
