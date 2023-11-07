@@ -42,7 +42,7 @@ include "view-header.php";
             border-radius: 5px;
         }
         button {
-            background-color: #red;
+            background-color: #ff8080;
             color: #fff;
             border: 1px solid #ccc;
             padding: 10px 20px;
