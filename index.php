@@ -9,7 +9,7 @@ include "view-header.php";
             <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ff8080;
+            background-color: #f2f2f2;
             text-align: center;
             margin: 0;
             padding: 0;
