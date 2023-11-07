@@ -15,7 +15,7 @@ include "view-header.php";
           <button onclick="getDivide()">Calculate</button>
             <button onclick="clearEntries()">Clear</button>
           <p>Result: <span id="result"></span></p>
-          <script src="script.js"></script>
+          <script src="java.js"></script>
       </body>
 </html>
 
