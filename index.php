@@ -9,18 +9,18 @@ include "view-header.php";
             <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #ff8080;
             text-align: center;
             margin: 0;
             padding: 0;
         }
         h1 {
-            background-color: #007bff;
+            background-color: #ff8080;
             color: #fff;
             padding: 10px;
         }
         .calculator {
-            background-color: #fff;
+            background-color: #ff8080;
             border: 1px solid #ccc;
             border-radius: 5px;
             width: 300px;
