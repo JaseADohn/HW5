@@ -46,3 +46,10 @@ function getMultiply() {
         document.getElementById('result').textContent = 'Please enter valid numbers';
     }
 }
+
+function clearEntries() {
+    document.getElementById('num1').value = '';
+    document.getElementById('num2').value = '';
+    document.getElementById('result').textContent = '';
+}
+
