@@ -15,6 +15,8 @@ include "view-header.php";
           <button onclick="getMultiply()">Calculate</button>
           <p>Result: <span id="result"></span></p>
           <script src="script.js"></script>
+          <button onclick="generateRandomNumber()">Generate Random Number</button>
+          <p id="randomResult"></p>
       </body>
 </html>
 
