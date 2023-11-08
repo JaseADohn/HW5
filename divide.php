@@ -6,6 +6,54 @@ include "view-header.php";
 <html>
       <head>
           <title>Division Calculator</title>
+            <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #ff8080;
+            color: #fff;
+            padding: 10px;
+        }
+        .calculator {
+            background-color: #ff8080;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff8080;
+            color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+        p {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+          </style>
       </head>
       <body>
           <h1>Division Calculator</h1>
