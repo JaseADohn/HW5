@@ -6,9 +6,9 @@ $(document).ready(function () {
         var num1 = $('#num1').val();
         var num2 = $('#num2').val();
         var result = parseFloat(num1) + parseFloat(num2);
-        $('#result').text(result);
         labels.push('Sum');
         results.push(result);
+        $('#result').text(result);
         displayChart(result);
     }
 
