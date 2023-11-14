@@ -64,6 +64,16 @@ include "view-header.php";
             <button id="clearBtn">Clear</button>
           <p>Result: <span id="result"></span></p>
           <canvas id="resultChart" width="400" height="200"></canvas>
+            <script>
+              anime({
+                  targets: '#multiplicationBtn' 'clearBtn',
+                  translateY: [20, 0],
+                  opacity: [0, 1],
+                  easing: 'easeInOutQuad',
+                  duration: 1000,
+                  delay: 500,
+              });
+          </script>
       </body>
 </html>
 
