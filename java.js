@@ -52,6 +52,11 @@ $(document).ready(function () {
         labels = [];
         results = [];
         displayChart();
+        Swal.fire({
+            icon: 'success',
+            title: 'Entries Cleared!',
+            text: 'Your entries have been cleared successfully.',
+        });
     }
 
 function displayChart() {
