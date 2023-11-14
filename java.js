@@ -83,9 +83,6 @@ function displayChart() {
         });
     }
 
-    var currentDateTime = moment().format('MMMM Do YYYY, h:mm:ss a');
-    $('#currentDateTime').text('Current Date and Time: ' + currentDateTime);
-
     Mousetrap.bind('`', function () {
         clearEntries();
     });
