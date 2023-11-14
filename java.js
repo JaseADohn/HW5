@@ -56,6 +56,8 @@ $(document).ready(function () {
 
 function displayChart() {
         var ctx = document.getElementById('resultChart').getContext('2d');
+        var formattedDate = moment().format('MMMM Do YYYY, h:mm:ss a');
+        console.log('Current formatted date:', formattedDate);
         if (chart) {
             chart.destroy(); // Destroy the existing chart instance
         }
