@@ -64,9 +64,6 @@ include "view-header.php";
           <button id="clearBtn">Clear</button>
           <p>Result: <span id="result"></span></p>
           <canvas id="resultChart" width="400" height="200"></canvas>
-          <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-          <script src="java.js"></script>
       </body>
 </html>
 
