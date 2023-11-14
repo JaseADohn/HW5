@@ -5,6 +5,7 @@ include "view-header.php";
 
 <html>
       <head>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
           <title>Division Calculator</title>
             <style>
         body {
