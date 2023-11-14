@@ -5,7 +5,6 @@ include "view-header.php";
 
 <html>
       <head>
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
           <title>Subtraction Calculator</title>
             <style>
         body {
@@ -65,10 +64,6 @@ include "view-header.php";
             <button onclick="clearEntries()">Clear</button>
           <p>Result: <span id="result"></span></p>
           <script src="java.js"></script>
-
-          <div id="chart-container">
-                <canvas id="myChart"></canvas>
-          </div>
       </body>
 </html>
 
