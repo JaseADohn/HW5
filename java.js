@@ -11,11 +11,6 @@ $(document).ready(function () {
         results.push(result);
         $('#result').text(result);
         displayChart(result);
-        Swal.fire({
-        icon: 'success',
-        title: 'Sum Calculated!',
-        text: 'The sum has been calculated successfully.',
-            });
     }
 
 
