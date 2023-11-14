@@ -81,6 +81,10 @@ function displayChart() {
         });
     }
 
+    Mousetrap.bind('ctrl+c', function () {
+        clearEntries();
+    });
+
     $('#additionBtn').click(getSum);
     $('#divisionBtn').click(getDivide);
     $('#multiplicationBtn').click(getMultiply);
