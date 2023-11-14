@@ -1,3 +1,5 @@
+var labels = [];
+var results = [];
 
 $(document).ready(function () {
     function getSum() {
@@ -5,6 +7,8 @@ $(document).ready(function () {
         var num2 = $('#num2').val();
         var result = parseFloat(num1) + parseFloat(num2);
         $('#result').text(result);
+        labels.push('Sum');
+        results.push(result);
         displayChart(result);
     }
 
@@ -38,29 +42,32 @@ $(document).ready(function () {
         $('#num1').val('');
         $('#num2').val('');
         $('#result').text('');
+        labels = [];
+        results = [];
+        displayChart();
     }
 
 function displayChart(result) {
     var ctx = document.getElementById('resultChart').getContext('2d');
     var chart = new Chart(ctx, {
         type: 'bar',
-        data: {
-            labels: ['Result'],
-            datasets: [{
-                label: 'Calculation Result',
-                data: [result],
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+    data: {
+        labels: labels,
+        datasets: [{
+            label: 'Calculation Results',
+            data: results,
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
             }
         }
+    }
     });
 }
 
