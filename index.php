@@ -64,7 +64,6 @@ include "view-header.php";
           <button id="clearBtn">Clear</button>
           <p>Result: <span id="result"></span></p>
           <canvas id="resultChart" width="400" height="200"></canvas>
-          <div id="currentDateTime"></div>
       </body>
 </html>
 
