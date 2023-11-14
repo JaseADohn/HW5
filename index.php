@@ -65,6 +65,10 @@ include "view-header.php";
           <button onclick="clearEntries()">Clear</button>
           <p>Result: <span id="result"></span></p>
           <script src="java.js"></script>
+
+          <div id="chart-container">
+                <canvas id="myChart"></canvas>
+          </div>
       </body>
 </html>
 
