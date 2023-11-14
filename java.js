@@ -17,6 +17,8 @@ $(document).ready(function () {
         var num1 = $('#num1').val();
         var num2 = $('#num2').val();
         var result = parseFloat(num1) / parseFloat(num2);
+        labels.push('Divide');
+        results.push(result);
         $('#result').text(result);
         displayChart(result);
     }
@@ -26,6 +28,8 @@ $(document).ready(function () {
         var num1 = $('#num1').val();
         var num2 = $('#num2').val();
         var result = parseFloat(num1) * parseFloat(num2);
+        labels.push('Multiply');
+        results.push(result);
         $('#result').text(result);
         displayChart(result);
     }
@@ -34,6 +38,8 @@ $(document).ready(function () {
         var num1 = $('#num1').val();
         var num2 = $('#num2').val();
         var result = parseFloat(num1) - parseFloat(num2);
+        labels.push('Subtract');
+        results.push(result);
         $('#result').text(result);
         displayChart(result);
     }
@@ -71,10 +77,11 @@ function displayChart(result) {
     });
 }
 
-
     $('#additionBtn').click(getSum);
     $('#divisionBtn').click(getDivide);
     $('#multiplicationBtn').click(getMultiply);
     $('#subtractionBtn').click(getSubtract);
     $('#clearBtn').click(clearEntries);
+
+    displayChart();
 });
