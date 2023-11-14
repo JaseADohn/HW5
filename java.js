@@ -85,6 +85,12 @@ function displayChart() {
                     }
                 }
             }
+            if (results.length === 0) {
+            Swal.fire({
+                icon: 'info',
+                title: 'No Results',
+                text: 'Perform a calculation to see results on the chart.',
+            });
         });
     }
 
