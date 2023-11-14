@@ -63,6 +63,7 @@ include "view-header.php";
           <button id="additionBtn">Calculate</button>
           <button id="clearBtn">Clear</button>
           <p>Result: <span id="result"></span></p>
+            <div id="currentDateTime"></div>
           <canvas id="resultChart" width="400" height="200"></canvas>
       </body>
 </html>
