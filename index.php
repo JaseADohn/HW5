@@ -60,9 +60,10 @@ include "view-header.php";
           <input type="number" id="num1" placeholder="Enter first number">
           <span> + </span>
           <input type="number" id="num2" placeholder="Enter second number">
-          <button onclick="getSum()">Calculate</button>
-          <button onclick="clearEntries()">Clear</button>
+          <button id="additionBtn">Calculate</button>
+          <button id="clearBtn">Clear</button>
           <p>Result: <span id="result"></span></p>
+          <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
           <script src="java.js"></script>
       </body>
 </html>
