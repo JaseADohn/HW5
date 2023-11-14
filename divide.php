@@ -66,7 +66,7 @@ include "view-header.php";
             <canvas id="resultChart" width="400" height="200"></canvas>
             <script>
               anime({
-                  targets: '#divisionBtn',
+                  targets: ['#divisionBtn', '#clearBtn'],
                   translateY: [20, 0],
                   opacity: [0, 1],
                   easing: 'easeInOutQuad',
