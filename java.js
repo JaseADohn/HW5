@@ -83,5 +83,4 @@ function displayChart(result) {
     $('#subtractionBtn').click(getSubtract);
     $('#clearBtn').click(clearEntries);
 
-    displayChart();
 });
