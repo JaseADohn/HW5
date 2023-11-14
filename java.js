@@ -1,56 +1,44 @@
-function getSum() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
 
-    if (!isNaN(num1) && !isNaN(num2)) {
-        const result = num1 + num2;
-        const message = `Result: ${result}`;
-        alert(message);
-    } else {
-        document.getElementById('result').textContent = 'Please enter valid numbers';
+$(document).ready(function () {
+    function getSum() {
+        var num1 = $('#num1').val();
+        var num2 = $('#num2').val();
+        var result = parseFloat(num1) + parseFloat(num2);
+        $('#result').text(result);
     }
-}
 
-function getSubtract() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
 
-    if (!isNaN(num1) && !isNaN(num2)) {
-        const result = num1 - num2;
-        document.getElementById('result').textContent = result;
-    } else {
-        document.getElementById('result').textContent = 'Please enter valid numbers';
+    function getDivide() {
+        var num1 = $('#num1').val();
+        var num2 = $('#num2').val();
+        var result = parseFloat(num1) / parseFloat(num2);
+        $('#result').text(result);
     }
-}
 
-function getDivide() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
 
-    if (!isNaN(num1) && !isNaN(num2)) {
-        const result = num1 / num2;
-        document.getElementById('result').textContent = result;
-    } else {
-        document.getElementById('result').textContent = 'Please enter valid numbers';
+    function getMultiply() {
+        var num1 = $('#num1').val();
+        var num2 = $('#num2').val();
+        var result = parseFloat(num1) * parseFloat(num2);
+        $('#result').text(result);
     }
-}
 
-function getMultiply() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-
-    if (!isNaN(num1) && !isNaN(num2)) {
-        const result = num1 * num2;
-        document.getElementById('result').textContent = result;
-    } else {
-        document.getElementById('result').textContent = 'Please enter valid numbers';
+    function getSubtract() {
+        var num1 = $('#num1').val();
+        var num2 = $('#num2').val();
+        var result = parseFloat(num1) - parseFloat(num2);
+        $('#result').text(result);
     }
-}
 
-function clearEntries() {
-    document.getElementById('num1').value = '';
-    document.getElementById('num2').value = '';
-    document.getElementById('result').textContent = '';
-}
+    function clearEntries() {
+        $('#num1').val('');
+        $('#num2').val('');
+        $('#result').text('');
+    }
 
-
+    $('#additionBtn').click(getSum);
+    $('#divisionBtn').click(getDivide);
+    $('#multiplicationBtn').click(getMultiply);
+    $('#subtractionBtn').click(getSubtract);
+    $('#clearBtn').click(clearEntries);
+});
