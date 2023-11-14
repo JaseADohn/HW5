@@ -81,7 +81,7 @@ function displayChart() {
         });
     }
 
-    Mousetrap.bind('ctrl+c', function () {
+    Mousetrap.bind('`', function () {
         clearEntries();
     });
 
